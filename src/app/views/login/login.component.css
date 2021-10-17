@@ -1,0 +1,112 @@
+.login {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  height         : 100vh;
+
+  color: #d9534f;
+}
+.login .logo {
+  font-family   : "Staatliches", cursive;
+  font-weight   : bolder;
+  font-size     : 1.75rem;
+  font-synthesis: weight;
+  color         : #a7ff04;
+  text-shadow   : 1px 1px 1px #000000;
+  border-color  : 1px rgb(255, 0, 0);
+  margin        : 0 0 3rem 0;
+}
+
+
+.login .card {
+
+  color : #333;
+  height: 65vh;
+
+  padding: 1.25rem 2rem;
+  margin : 0.15rem;
+  opacity: 0.9;
+}
+
+.login .grid {
+  /* overflow: visible;
+  grid-template-columns:50% 45% ;
+  gap: 2rem; */
+}
+
+.login .flex-email {
+  justify-content: space-evenly;
+}
+
+.login-text {
+  /* animation:slideInFromLeft 1s ease-in; */
+}
+
+.login .submit {
+  display      : block;
+  width        : 100%;
+  border-radius: 2px;
+  margin       : 0.75rem;
+  /* padding   : 10px 28px; */
+  font-size    : 16px;
+  cursor       : pointer;
+  text-align   : center;
+
+}
+
+.login-form {
+  /* position:relative; */
+  top      : 4rem;
+  height   : 20rem;
+  width    : 25rem;
+  padding  : 2.5rem;
+  z-index  : 100;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.login-form .form-control {
+  /* margin: 1.5rem; */
+}
+
+.login-form input[type='text'],
+.login-form input[type='password'],
+.login-form input[type='email'] {
+  border: 0;
+
+  /* border-bottom: 1px solid #b4becd; */
+  /* width: 100%; */
+  padding     : 0.25rem;
+  /* margin   : 0.75rem; */
+  font-size   : 1.25rem;
+  text-justify: newspaper;
+
+}
+
+.login-form input[type='checkbox'] {
+
+
+  padding: 0.25rem;
+  margin : 0.75rem;
+
+
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.login::after,
+.login::before {
+  /* content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #ffff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg); */
+
+}

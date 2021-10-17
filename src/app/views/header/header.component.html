@@ -1,0 +1,30 @@
+
+<nav class="navbar flex">
+
+  <ul class=" ">
+
+    <li><a routerLink="" >Home</a></li>
+    <li><a routerLink="contact">contact</a></li>
+    <li><a routerLink="about">about</a></li>
+
+    <li>
+      <div class="dropdown">
+        <a class="dropbtn">Admin </a>
+        <div class="dropdown-content">
+          <a href="#">Hobby</a>
+          <a href="#">Skill</a>
+          <a href="#">Address</a>
+        </div>
+      </div>
+
+    </li>
+
+
+    <li><a routerLink="register">Register</a></li>
+  </ul>
+  <ul>
+    <li ><a *ngIf="!isLogged" (click)="login()"  routerLink="login" >Login</a></li>
+    <li ><a *ngIf="isLogged" (click)="logout()" >Logout</a></li>
+  </ul>
+
+</nav>
