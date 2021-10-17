@@ -1,1 +1,29 @@
+<div class="grid grid-2">
 
+    <div class="card">
+        <h1>Get input.value</h1>
+        <input type="text" #box placeholder="Enter your email" name="email">
+        <button class="btn btn-around" (click)="getData(box.value)">Click me</button>
+        <p>Box value is :{{pDisplay}}</p>
+    </div>
+
+    <div class="card">
+        <h1>Get input.value</h1>
+        <div class="flex">
+            <button class="btn btn-around" (click)="counterUp()">++</button>
+            <button class="btn btn-around" (click)="counterDown()">--</button>
+            <button class="btn btn-around" (click)="hide()">hide</button>
+        </div>
+        <p *ngIf="hiddenP">your counter is :{{count}}</p>
+    </div>
+
+    <div class="card">
+        <h1>property binding</h1>
+        <input type="text" value="{{fname}}" disabled={{inutStatus}}>
+        <br><br>
+        <input type="text" [value]=fname [disabled]=inutStatus>
+
+        <button class="btn btn-around" (click)="changeClass()">changeColor</button>
+    </div>
+
+</div>
