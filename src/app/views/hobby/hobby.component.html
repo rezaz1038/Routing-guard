@@ -1,1 +1,25 @@
-<p>hobby works!</p>
+<div class="grid">
+    <div class="card">
+        <h1>canActivatedChild</h1>
+        <input type="text" #box placeholder="Enter your email" name="email">
+        <button class="btn btn-around" (click)="signinSubHobby(box.value)">Click me</button>
+        <br>
+        <a class="btn btn-around m-1" (click)="iSignArt()">Art </a>
+        <a class="btn btn-around m-1" (click)="iSignSport()">Sport </a>
+        <p>Box value is :{{box.value}}</p>
+    </div>
+
+
+    <div class="card">
+        <h1>your hobby is =></h1>
+        <a class="btn btn-around" routerLink="sport">sport</a>
+
+
+    </div>
+    <div class="card">
+        <h1>your hobby is =></h1>
+        <a class="btn btn-around" routerLink="art">art</a>
+    </div>
+    <router-outlet></router-outlet>
+
+</div>
