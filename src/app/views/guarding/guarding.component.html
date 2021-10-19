@@ -1,0 +1,11 @@
+<div class="grid">
+    <div class="card">
+        <h1>Get input.value</h1>
+        <input type="text" #box placeholder="Enter your email" name="email">
+        <button class="btn btn-around" (click)="signinSkill(box.value)">Click me</button>
+        <br>
+        <a class="btn btn-around" (click)="iSignSkill()"> Skill click if your email is right </a>
+        <p>Box value is :{{box.value}}</p>
+    </div>
+
+</div>

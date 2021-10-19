@@ -16,6 +16,7 @@ import { NotAuthorizedComponent } from './views/not-authorized/not-authorized.co
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { RegisterComponent } from './views/register/register.component';
 import { SkillComponent } from './views/skill/skill.component';
+import { GuardingComponent } from './views/guarding/guarding.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SkillComponent } from './views/skill/skill.component';
     NotFoundComponent,
     NotAuthorizedComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    GuardingComponent
   ],
   imports: [
     BrowserModule,
