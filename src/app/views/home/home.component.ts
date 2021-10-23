@@ -15,9 +15,18 @@ title='app-home';
   inutStatus=false;
   fname='reza';
 
+person:any[]=[
+  {name:'reza',age:10},
+  {name:'ali',age:13},
+  {name:'taha',age:14},
+  {name:'gholi',age:16},
+]
+
+model:any[]=[] ;
   constructor() { }
 
   ngOnInit(): void {
+    this.model=this.person;
   }
 
   getData(val:string){
@@ -43,7 +52,7 @@ hide(){
 }
 
 changeClass(){
-
+  
 }
 
 }

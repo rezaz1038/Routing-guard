@@ -25,5 +25,22 @@
 
         <button class="btn btn-around" (click)="changeClass()">changeColor</button>
     </div>
+    <div class="card">
+        <h1>ng for</h1>
+        <label class="">Search Person</label>
+        <input type="text" class="text-size-3 p-2">
+        <table  class="table-res">
+          <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+          <tr *ngFor="let item of person; let no= index  ">
+            <td>{{no+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.age}}</td>
+          </tr>
+        </table>
+    </div>
 
 </div>

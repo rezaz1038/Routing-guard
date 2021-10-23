@@ -8,13 +8,22 @@
         <p>Box value is :{{box.value}}</p>
     </div>
     <div class="card">
-        <h1>canActivatedChild</h1>
-        <input type="text" #box placeholder="Enter your email" name="email">
-        <button class="btn btn-around" (click)="signinSkill(box.value)">Click me</button>
-        <br>
-        <a class="btn btn-around m-1" (click)="iSignSkill()">Backend Skill </a>
-        <a class="btn btn-around m-1" (click)="iSignSkill()">FrontEnd Skill </a>
-        <p>Box value is :{{box.value}}</p>
+        <h1>canActivatedChild in Hobby  </h1>
+
+        <button class="btn btn-around" (click)="gotoHobby()">Click me</button>
+
+    </div>
+    <div class="card">
+        <h2>can De ActivatedChild in  Address  </h2>
+
+        <button class="btn btn-around" (click)="gotoAddress()">Click me</button>
+
+    </div>
+    <div class="card">
+        <h2>data and resolve in  courses  </h2>
+
+        <button class="btn btn-around" (click)="gotoCourses()">Click me</button>
+
     </div>
 
 </div>

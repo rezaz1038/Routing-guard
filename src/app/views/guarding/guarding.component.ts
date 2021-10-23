@@ -32,5 +32,16 @@ export class GuardingComponent implements OnInit {
   iSignSkill() {
      this.router.navigate(['skill'])
   }
+  gotoHobby() {
+     this.router.navigate(['hobby'])
+  }
 
+  gotoAddress(){
+    this.router.navigate(['address'])
+  }
+
+  gotoCourses(){
+    this.router.navigate(['courses'])
+
+  }
 }

@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './views/about/about.component';
 import { AdminComponent } from './views/admin/admin.component';
-import { AdressComponent } from './views/adress/adress.component';
+
 import { ContactComponent } from './views/contact/contact.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { HeaderComponent } from './views/header/header.component';
@@ -19,6 +19,13 @@ import { SkillComponent } from './views/skill/skill.component';
 import { GuardingComponent } from './views/guarding/guarding.component';
 import { SportComponent } from './views/sport/sport.component';
 import { ArtComponent } from './views/art/art.component';
+import { AddressComponent } from './views/address/address.component';
+
+import { RiceComponent } from './views/product/rice/rice.component';
+import { OilComponent } from './views/product/oil/oil.component';
+import { ProductComponent } from './views/product/product.component';
+import { OilDetailComponent } from './views/product/oil-detail/oil-detail.component';
+import { RiceDetailComponent } from './views/product/rice-detail/rice-detail.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +38,19 @@ import { ArtComponent } from './views/art/art.component';
     SkillComponent,
     HobbyComponent,
     FooterComponent,
-    AdressComponent,
+    AddressComponent,
     NotFoundComponent,
     NotAuthorizedComponent,
     LoginComponent,
     HeaderComponent,
     GuardingComponent,
     SportComponent,
-    ArtComponent
+    ArtComponent,
+    ProductComponent,
+    RiceComponent,
+    OilComponent,
+    OilDetailComponent,
+    RiceDetailComponent
   ],
   imports: [
     BrowserModule,
