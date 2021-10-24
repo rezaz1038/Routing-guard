@@ -4,7 +4,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { AddressGuard } from "./core/auth/address.guard";
 import { AuthHobbyGuard } from "./core/auth/auth-hobby.guard";
 import { AuthSkillService } from "./core/auth/auth-Skill.service";
-
 import { AboutComponent } from "./views/about/about.component";
 import { AddressComponent } from "./views/address/address.component";
 import { ArtComponent } from "./views/art/art.component";
@@ -15,15 +14,11 @@ import { HomeComponent } from "./views/home/home.component";
 import { LoginComponent } from "./views/login/login.component";
 import { NotAuthorizedComponent } from "./views/not-authorized/not-authorized.component";
 import { NotFoundComponent } from "./views/not-found/not-found.component";
-import { OilDetailComponent } from "./views/product/oil-detail/oil-detail.component";
-import { OilComponent } from "./views/product/oil/oil.component";
-import { ProductComponent } from "./views/product/product.component";
-import { RiceDetailComponent } from "./views/product/rice-detail/rice-detail.component";
-import { RiceComponent } from "./views/product/rice/rice.component";
 import { RegisterComponent } from "./views/register/register.component";
-
 import { SkillComponent } from "./views/skill/skill.component";
 import { SportComponent } from "./views/sport/sport.component";
+
+
 
 
 const routes: Routes = [
@@ -41,13 +36,8 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'product', component: ProductComponent,children: [
-      { path: 'rice', component: RiceComponent },
-      { path: 'rice/:id', component: RiceDetailComponent },
-      { path: 'oil', component: OilComponent },
-      { path: 'oil/:id', component: OilDetailComponent },
-
-    ]
+    path: 'product',
+    loadChildren: async () => (await import('./views/product/product.module')).ProuductModule,
   },
 
   { path: 'not-Auth', component: NotAuthorizedComponent },

@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/core/services/product.service';
 })
 export class OilComponent implements OnInit {
 
-modelData:Oil[]=[]
+modelData:any[]=[]
 
   constructor(
     private productService:ProductService,
@@ -18,7 +18,13 @@ modelData:Oil[]=[]
 
 
   ngOnInit(): void {
-    this.modelData=this.productService.oils;
+    this.iniData();
+  }
+
+  iniData(){
+    this.modelData=this.productService.oil;
+    console.log(this.modelData);
+
   }
 
 }

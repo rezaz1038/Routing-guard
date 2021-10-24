@@ -26,6 +26,7 @@ import { OilComponent } from './views/product/oil/oil.component';
 import { ProductComponent } from './views/product/product.component';
 import { OilDetailComponent } from './views/product/oil-detail/oil-detail.component';
 import { RiceDetailComponent } from './views/product/rice-detail/rice-detail.component';
+import { ProuductModule } from './views/product/product.module';
 
 @NgModule({
   declarations: [
@@ -46,15 +47,13 @@ import { RiceDetailComponent } from './views/product/rice-detail/rice-detail.com
     GuardingComponent,
     SportComponent,
     ArtComponent,
-    ProductComponent,
-    RiceComponent,
-    OilComponent,
-    OilDetailComponent,
-    RiceDetailComponent
+    // ProductComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ProuductModule,
 
   ],
   providers: [],

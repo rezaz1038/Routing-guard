@@ -10,12 +10,12 @@ export class ProductService {
 
   constructor() { }
 
-  public oils: Oil[] = [
+  public oil: Oil[] = [
     {
       category: 'kitchen',
       description: 'ok ok',
       id: 'o1',
-      img: "../../assets/product/o1.jpg",
+      img: "../assets/img/product/o1.jpg",
       name: 'ساعی',
       price: 1500,
       type: 'جامد',
@@ -27,7 +27,7 @@ export class ProductService {
       category: 'kitchen',
       description: 'ok',
       id: 'o2',
-      img: "../../assets/product/o2.jpg",
+      img:"../assets/img/product/o2.jpg",
       name: 'بهار',
       price: 1000,
       type: 'مایع',
@@ -39,7 +39,7 @@ export class ProductService {
       category: 'kitchen',
       description: 'ok ok',
       id: 'o1',
-      img: "../../assets/product/o3.jpg",
+      img: "../assets/img/product/o3.jpg",
       name: 'سرخ کردنی غنچه',
       price: 1500,
       type: 'جامد',
@@ -49,7 +49,7 @@ export class ProductService {
     },
 
   ];
-  public rices: Rice[] = [
+  public rice: Rice[] = [
     {
       category: 'kitchen',
       description: 'ok ok',
